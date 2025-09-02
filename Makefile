@@ -73,7 +73,7 @@ especifico: all
 	fi; \
 	echo "Executando teste $$caso_teste..."; \
 # 	./"$(EXEC_DIR)/$$name" < "$$input_file" > output.tmp; \
-	./"$(EXEC_DIR)/$$name" < "$$input_file"; \
+	valgrind ./"$(EXEC_DIR)/$$name" < "$$input_file"; \
 # 	echo "Diferenças encontradas (saída esperada vs. obtida):"; \
 # 	diff -w -B -y "$$expected_output" output.tmp; \
 # 	if [ $$? -eq 0 ]; then \
