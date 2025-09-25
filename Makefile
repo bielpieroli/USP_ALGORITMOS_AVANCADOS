@@ -115,7 +115,7 @@ zip:
 		echo "all: clean" > "$(CODIGOS_DIR)/Makefile"; \
 		echo "	g++ -Wall -Werror -std=c++17 $$name.cpp -o $$name" >> "$(CODIGOS_DIR)/Makefile"; \
 		echo "" >> "$(CODIGOS_DIR)/Makefile"; \
-		echo "run: all" >> "$(CODIGOS_DIR)/Makefile"; \
+		echo "run: " >> "$(CODIGOS_DIR)/Makefile"; \
 		echo "	./$$name" >> "$(CODIGOS_DIR)/Makefile"; \
 		echo "" >> "$(CODIGOS_DIR)/Makefile"; \
 		echo "clean:" >> "$(CODIGOS_DIR)/Makefile"; \
